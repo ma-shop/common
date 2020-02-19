@@ -1,0 +1,122 @@
+{
+  "name": "common",
+  "private": true,
+  "scripts": {
+    "test": "make test"
+  },
+  "dependencies": {
+    "@babel/cli": "7.8.4",
+    "@babel/core": "7.8.4",
+    "@babel/node": "7.8.4",
+    "babel-jest": "25.1.0",
+    "chalk": "3.0.0",
+    "enzyme": "3.11.0",
+    "enzyme-adapter-react-16": "1.15.2",
+    "enzyme-to-json": "3.4.4",
+    "eslint": "6.8.0",
+    "eslint-config-ma-shop-react-native": "0.1.41",
+    "fancy-log": "1.3.3",
+    "gulp": "4.0.2",
+    "gulp-babel": "8.0.0",
+    "gulp-newer": "1.4.0",
+    "gulp-plumber": "1.2.1",
+    "gulp-watch": "5.0.1",
+    "husky": "4.2.1",
+    "jest": "25.1.0",
+    "lerna": "^3.20.2",
+    "lint-staged": "10.0.7",
+    "lodash": "4.17.15",
+    "metro-react-native-babel-preset": "0.58.0",
+    "prettier": "1.19.1",
+    "react": "16.12.0",
+    "react-native": "0.61.5",
+    "through2": "2.0.5"
+  },
+  "jest": {
+    "preset": "react-native",
+    "verbose": true,
+    "bail": true,
+    "cache": true,
+    "snapshotSerializers": [
+      "enzyme-to-json/serializer"
+    ],
+    "coverageReporters": [
+      "text"
+    ],
+    "moduleFileExtensions": [
+      "js",
+      "mjs",
+      "jsx"
+    ],
+    "testMatch": [
+      "<rootDir>/packages/*/test/**/*.test.{js,mjs,jsx}"
+    ],
+    "transform": {
+      "^.+\\.m?jsx?$": "<rootDir>/node_modules/babel-jest/build/index.js"
+    },
+    "collectCoverageFrom": [
+      "<rootDir>/packages/*/src/**/*.{js,mjs,jsx}"
+    ],
+    "coverageDirectory": "coverage"
+  },
+  "lint-staged": {
+    "*": [
+      "./scripts/file-test.js"
+    ],
+    "*.+(js|mjs|jsx)": [
+      "eslint --cache --fix",
+      "git add"
+    ],
+    "*.md": [
+      "prettier --write --parser markdown",
+      "git add"
+    ],
+    "*.json": [
+      "prettier --write --parser json",
+      "git add"
+    ]
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "make index-files; lint-staged"
+    }
+  },
+  "eslintConfig": {
+    "extends": "ma-shop-react-native",
+    "rules": {
+      "import/no-cycle": [
+        "error",
+        {
+          "maxDepth": 2
+        }
+      ]
+    },
+    "overrides": [
+      {
+        "files": [
+          "packages/*/test/**/*.test.@(mjs|js|jsx)"
+        ],
+        "extends": [
+          "ma-shop-react-native/test"
+        ],
+        "rules": {
+          "import/no-extraneous-dependencies": "off"
+        }
+      }
+    ]
+  },
+  "eslintIgnore": [
+    "packages/*/node_modules",
+    "dist"
+  ],
+  "prettier": {
+    "singleQuote": true,
+    "trailingComma": "all",
+    "semi": false,
+    "arrowParens": "always"
+  },
+  "engines": {
+    "node": "^12.13.0",
+    "npm": "^6.12.0"
+  }
+}
