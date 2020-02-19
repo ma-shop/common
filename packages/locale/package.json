@@ -1,6 +1,6 @@
 {
   "name": "@ma-shop/locale",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "main": "dist/index.js",
   "author": "Tyler Benton",
   "license": "MIT",
