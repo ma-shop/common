@@ -2,5 +2,8 @@
   "npmClient": "yarn",
   "packages": ["packages/*"],
   "version": "independent",
-  "ignoreChanges": ["ignored-file", "*.md"]
+  "ignoreChanges": ["ignored-file", "*.md"],
+  "publish": {
+    "npmClientArgs": ["--access public"]
+  }
 }
