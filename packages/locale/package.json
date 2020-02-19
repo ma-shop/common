@@ -1,11 +1,14 @@
 {
   "name": "@ma-shop/locale",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "main": "dist/index.js",
   "author": "Tyler Benton",
   "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
   "dependencies": {
     "lodash": "4.17.15"
   },
-  "gitHead": "388fd3b8289d47baefefe3b42ee083fd7bc4904e"
+  "gitHead": "3e213cdf455e3ac36b88a85e1f7c43d1936fe50d"
 }
