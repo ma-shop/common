@@ -23,10 +23,10 @@ function rename (fn) {
   })
 }
 
-const packages = path.join(__dirname, 'packages/*/src/**/*.mjs')
+const packages = path.join(__dirname, 'utils/*/src/**/*.mjs')
 
 gulp.task('build', () => {
-  const base = path.join(__dirname, 'packages')
+  const base = path.join(__dirname, 'utils')
 
   return gulp
     .src(packages, { base })
