@@ -1,0 +1,8 @@
+{
+  "name": "@ma-shop/apollo",
+  "version": "0.0.1",
+  "main": "dist/index.js",
+  "author": "Tyler Benton",
+  "license": "MIT",
+  "dependencies": {}
+}
