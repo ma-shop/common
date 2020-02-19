@@ -1,4 +1,4 @@
-import { LocaleManager } from '../src'
+import { LocaleManager } from '../src/locale'
 
 
 describe('locale', () => {

@@ -5,7 +5,7 @@ import { Text } from 'react-native'
 import { renderIf } from '../src'
 
 
-describe.skip('renderIf', () => {
+describe('renderIf', () => {
   test.each([
     'woohoo',
     true,

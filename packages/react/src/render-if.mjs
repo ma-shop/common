@@ -1,5 +1,4 @@
-// import { is } from '@ma-shop/is'
-const is = { empty: () => true }
+import { is } from '@ma-shop/is'
 
 /// @name renderIf
 /// @author Tyler Benton

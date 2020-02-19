@@ -1829,6 +1829,11 @@
   dependencies:
     "@types/node" ">= 8"
 
+"@react-native-community/async-storage@1.8.0":
+  version "1.8.0"
+  resolved "https://registry.yarnpkg.com/@react-native-community/async-storage/-/async-storage-1.8.0.tgz#5f23ad486daa284398c71f2cc94d15fb7be40bb8"
+  integrity sha512-R8hYm9h7MqoTa/opzBID6hhL5rseNoMJK1wG/B/Diob+JzEv7b1GMpHjsAZX2pU2o82LU73XbPJOPzfvkGFaUA==
+
 "@react-native-community/cli-debugger-ui@^3.0.0":
   version "3.0.0"
   resolved "https://registry.yarnpkg.com/@react-native-community/cli-debugger-ui/-/cli-debugger-ui-3.0.0.tgz#d01d08d1e5ddc1633d82c7d84d48fff07bd39416"
@@ -9299,10 +9304,25 @@ react-devtools-core@^3.6.3:
     shell-quote "^1.6.1"
     ws "^3.3.1"
 
+react-dom@16.12.0:
+  version "16.12.0"
+  resolved "https://registry.yarnpkg.com/react-dom/-/react-dom-16.12.0.tgz#0da4b714b8d13c2038c9396b54a92baea633fe11"
+  integrity sha512-LMxFfAGrcS3kETtQaCkTKjMiifahaMySFDn71fZUNpPHZQEzmk/GiAeIT8JSOrHB23fnuCOMruL2a8NYlw+8Gw==
+  dependencies:
+    loose-envify "^1.1.0"
+    object-assign "^4.1.1"
+    prop-types "^15.6.2"
+    scheduler "^0.18.0"
+
 react-is@^16.12.0, react-is@^16.8.1, react-is@^16.8.4, react-is@^16.8.6, react-is@^16.9.0:
   version "16.12.0"
   resolved "https://registry.yarnpkg.com/react-is/-/react-is-16.12.0.tgz#2cc0fe0fba742d97fd527c42a13bec4eeb06241c"
   integrity sha512-rPCkf/mWBtKc97aLL9/txD8DZdemK0vkA3JMLShjlJB3Pj3s+lpf1KaBzMfQrAmhMQB0n1cU/SUGgKKBCe837Q==
+
+react-native-device-info@5.5.3:
+  version "5.5.3"
+  resolved "https://registry.yarnpkg.com/react-native-device-info/-/react-native-device-info-5.5.3.tgz#6652fb46c4602a1dd3a5d6a18d2266ecdf97fec7"
+  integrity sha512-bzUVTPHca+FfNco1qaOM1+idoeII8zdpGRsR+RK+DWhwp9utHZWfbkonZZ9XFm/U+i3mirNxt6oaKV+vUMjMzg==
 
 react-native@0.61.5:
   version "0.61.5"
