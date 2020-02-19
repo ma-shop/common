@@ -6,5 +6,6 @@
   "license": "MIT",
   "dependencies": {
     "globby": "11.0.0"
-  }
+  },
+  "gitHead": "3a125133052abbb7e9c5884d00a0e76dd1c210aa"
 }

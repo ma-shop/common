@@ -3,5 +3,6 @@
   "version": "0.0.3",
   "main": "dist/index.js",
   "author": "Tyler Benton",
-  "license": "MIT"
+  "license": "MIT",
+  "gitHead": "3a125133052abbb7e9c5884d00a0e76dd1c210aa"
 }

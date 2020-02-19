@@ -3,7 +3,11 @@
   "packages": ["packages/*"],
   "version": "independent",
   "ignoreChanges": ["ignored-file", "*.md"],
-  "publish": {
-    "npmClientArgs": ["--access public"]
-  }
+  "command": {
+    "publish": {
+      "npmClientArgs": ["--access public"],
+      "ignoreChanges": ["*.md", "packages/*/test/**"]
+    }
+  },
+  "npmClientArgs": ["--no-lockfile"]
 }

@@ -26,7 +26,6 @@ install:
 	@yarn
 	@lerna bootstrap
 
-
 # This will give you a fresh instance of the project. Run this if you run into a weird build
 # issue you can't solve. Also run this if you have been messing around with dependencies and
 # make sure everything's still working correctly before you commit.
@@ -82,3 +81,6 @@ update-version:
 
 index-files:
 	@scripts/index-files.js
+
+copy-license:
+	@scripts/copy-license
