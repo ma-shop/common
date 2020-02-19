@@ -1,8 +1,8 @@
 {
   "name": "@ma-shop/react-native",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "main": "dist/index.js",
   "author": "Tyler Benton",
   "license": "MIT",
-  "gitHead": "3a125133052abbb7e9c5884d00a0e76dd1c210aa"
+  "gitHead": "388fd3b8289d47baefefe3b42ee083fd7bc4904e"
 }

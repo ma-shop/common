@@ -5,9 +5,9 @@
   "ignoreChanges": ["ignored-file", "*.md"],
   "command": {
     "publish": {
-      "npmClientArgs": ["--access public"],
+      "npmClientArgs": ["--access public --no-verify-access"],
       "ignoreChanges": ["*.md", "packages/*/test/**"]
     }
   },
-  "npmClientArgs": ["--no-lockfile"]
+  "npmClientArgs": ["--no-lockfile --no-verify-access"]
 }
