@@ -1,0 +1,213 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`locale en-AU alpha2 1`] = `"AU"`;
+
+exports[`locale en-AU alpha3 1`] = `"AUS"`;
+
+exports[`locale en-AU country 1`] = `"AU"`;
+
+exports[`locale en-AU curreny 1`] = `"AUD"`;
+
+exports[`locale en-AU isMarketCountry 1`] = `true`;
+
+exports[`locale en-AU language 1`] = `"en"`;
+
+exports[`locale en-AU locale 1`] = `"en-AU"`;
+
+exports[`locale en-AU moment 1`] = `"en-au"`;
+
+exports[`locale en-AU name 1`] = `"Australia"`;
+
+exports[`locale en-CA alpha2 1`] = `"CA"`;
+
+exports[`locale en-CA alpha3 1`] = `"CAN"`;
+
+exports[`locale en-CA country 1`] = `"CA"`;
+
+exports[`locale en-CA curreny 1`] = `"CAD"`;
+
+exports[`locale en-CA isMarketCountry 1`] = `true`;
+
+exports[`locale en-CA language 1`] = `"en"`;
+
+exports[`locale en-CA locale 1`] = `"en-CA"`;
+
+exports[`locale en-CA moment 1`] = `"en-ca"`;
+
+exports[`locale en-CA name 1`] = `"Canada"`;
+
+exports[`locale en-HK alpha2 1`] = `"HK"`;
+
+exports[`locale en-HK alpha3 1`] = `"HKG"`;
+
+exports[`locale en-HK country 1`] = `"HK"`;
+
+exports[`locale en-HK curreny 1`] = `"HKD"`;
+
+exports[`locale en-HK isMarketCountry 1`] = `true`;
+
+exports[`locale en-HK language 1`] = `"en"`;
+
+exports[`locale en-HK locale 1`] = `"en-HK"`;
+
+exports[`locale en-HK moment 1`] = `"en-gb"`;
+
+exports[`locale en-HK name 1`] = `"Hong Kong - English"`;
+
+exports[`locale en-MY alpha2 1`] = `"MY"`;
+
+exports[`locale en-MY alpha3 1`] = `"MYS"`;
+
+exports[`locale en-MY country 1`] = `"MY"`;
+
+exports[`locale en-MY curreny 1`] = `"MYR"`;
+
+exports[`locale en-MY isMarketCountry 1`] = `true`;
+
+exports[`locale en-MY language 1`] = `"en"`;
+
+exports[`locale en-MY locale 1`] = `"en-MY"`;
+
+exports[`locale en-MY moment 1`] = `"en"`;
+
+exports[`locale en-MY name 1`] = `"Malaysia - English"`;
+
+exports[`locale en-SG alpha2 1`] = `"SG"`;
+
+exports[`locale en-SG alpha3 1`] = `"SPG"`;
+
+exports[`locale en-SG country 1`] = `"SG"`;
+
+exports[`locale en-SG curreny 1`] = `"SGD"`;
+
+exports[`locale en-SG isMarketCountry 1`] = `true`;
+
+exports[`locale en-SG language 1`] = `"en"`;
+
+exports[`locale en-SG locale 1`] = `"en-SG"`;
+
+exports[`locale en-SG moment 1`] = `"en-SG"`;
+
+exports[`locale en-SG name 1`] = `"Singapore"`;
+
+exports[`locale en-US alpha2 1`] = `"US"`;
+
+exports[`locale en-US alpha3 1`] = `"USA"`;
+
+exports[`locale en-US country 1`] = `"US"`;
+
+exports[`locale en-US curreny 1`] = `"USD"`;
+
+exports[`locale en-US isMarketCountry 1`] = `true`;
+
+exports[`locale en-US language 1`] = `"en"`;
+
+exports[`locale en-US locale 1`] = `"en-US"`;
+
+exports[`locale en-US moment 1`] = `"en"`;
+
+exports[`locale en-US name 1`] = `"United States"`;
+
+exports[`locale ms-MY alpha2 1`] = `"MY"`;
+
+exports[`locale ms-MY alpha3 1`] = `"MYS"`;
+
+exports[`locale ms-MY country 1`] = `"MY"`;
+
+exports[`locale ms-MY curreny 1`] = `"MYR"`;
+
+exports[`locale ms-MY isMarketCountry 1`] = `true`;
+
+exports[`locale ms-MY language 1`] = `"ms"`;
+
+exports[`locale ms-MY locale 1`] = `"ms-MY"`;
+
+exports[`locale ms-MY moment 1`] = `"ms-my"`;
+
+exports[`locale ms-MY name 1`] = `"Malaysia"`;
+
+exports[`locale parse 1`] = `
+Object {
+  "alpha2": "US",
+  "alpha3": "USA",
+  "country": "US",
+  "curreny": "USD",
+  "isMarketCountry": true,
+  "language": "en",
+  "locale": "en-US",
+  "moment": "en",
+  "name": "United States",
+}
+`;
+
+exports[`locale zh-HK alpha2 1`] = `"HK"`;
+
+exports[`locale zh-HK alpha3 1`] = `"HKG"`;
+
+exports[`locale zh-HK country 1`] = `"HK"`;
+
+exports[`locale zh-HK curreny 1`] = `"HKD"`;
+
+exports[`locale zh-HK isMarketCountry 1`] = `true`;
+
+exports[`locale zh-HK language 1`] = `"zh"`;
+
+exports[`locale zh-HK locale 1`] = `"zh-HK"`;
+
+exports[`locale zh-HK moment 1`] = `"zh-hk"`;
+
+exports[`locale zh-HK name 1`] = `"香港"`;
+
+exports[`locale zh-MY alpha2 1`] = `"MY"`;
+
+exports[`locale zh-MY alpha3 1`] = `"MYS"`;
+
+exports[`locale zh-MY country 1`] = `"MY"`;
+
+exports[`locale zh-MY curreny 1`] = `"MYR"`;
+
+exports[`locale zh-MY isMarketCountry 1`] = `true`;
+
+exports[`locale zh-MY language 1`] = `"zh"`;
+
+exports[`locale zh-MY locale 1`] = `"zh-MY"`;
+
+exports[`locale zh-MY moment 1`] = `"zh-cn"`;
+
+exports[`locale zh-MY name 1`] = `"马来西亚"`;
+
+exports[`locale zh-SG alpha2 1`] = `"SG"`;
+
+exports[`locale zh-SG alpha3 1`] = `"SPG"`;
+
+exports[`locale zh-SG country 1`] = `"SG"`;
+
+exports[`locale zh-SG curreny 1`] = `"SGD"`;
+
+exports[`locale zh-SG isMarketCountry 1`] = `true`;
+
+exports[`locale zh-SG language 1`] = `"zh"`;
+
+exports[`locale zh-SG locale 1`] = `"zh-SG"`;
+
+exports[`locale zh-SG moment 1`] = `"zh-cn"`;
+
+exports[`locale zh-SG name 1`] = `"新加坡"`;
+
+exports[`locale zh-TW alpha2 1`] = `"TW"`;
+
+exports[`locale zh-TW alpha3 1`] = `"TWN"`;
+
+exports[`locale zh-TW country 1`] = `"TW"`;
+
+exports[`locale zh-TW curreny 1`] = `"TWD"`;
+
+exports[`locale zh-TW isMarketCountry 1`] = `true`;
+
+exports[`locale zh-TW language 1`] = `"zh"`;
+
+exports[`locale zh-TW locale 1`] = `"zh-TW"`;
+
+exports[`locale zh-TW moment 1`] = `"zh-tw"`;
+
+exports[`locale zh-TW name 1`] = `"臺灣"`;
