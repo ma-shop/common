@@ -1,6 +1,6 @@
 {
   "name": "@ma-shop/apollo",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "main": "dist/index.js",
   "author": "Tyler Benton",
   "license": "MIT",
@@ -12,6 +12,6 @@
     "@ma-shop/is": "0.0.6"
   },
   "devDependencies": {
-    "@ma-shop/is": "0.0.6"
+    "@ma-shop/is": "^0.0.7"
   }
 }
