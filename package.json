@@ -60,9 +60,6 @@
     "coverageDirectory": "coverage"
   },
   "lint-staged": {
-    "*": [
-      "./scripts/file-test.js"
-    ],
     "*.+(js|mjs|jsx)": [
       "eslint --cache --fix",
       "git add"

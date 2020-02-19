@@ -11,10 +11,12 @@ clean-deep: clean
 	@echo '💣 💣 Remove all the things 💣 💣'
 	@rm -rf \
 		node_modules \
+		packages/*/node_modules \
 		*.log \
 		.DS_STORE \
 		.eslintcache \
-		package-lock.json
+		package-lock.json \
+		packages/*/package-lock.json
 
 clean:
 	@rm -rf packages/*/dist
@@ -67,7 +69,6 @@ publish:
 	@make build lint
 	@# no idea why but this can't be on the same line as the lint
 	@make test
-	@make _pre-publish
 	@lerna publish
 
 # @todo not sure if this can be used with lerna

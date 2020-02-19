@@ -1,1 +1,8 @@
-["files", "is", "locale"]
+[
+  "apollo",
+  "files",
+  "is",
+  "locale",
+  "react",
+  "react-native"
+]
