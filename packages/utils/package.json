@@ -1,6 +1,6 @@
 {
   "name": "@ma-shop/utils",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "main": "dist/index.js",
   "author": "Tyler Benton",
   "license": "MIT",
@@ -8,7 +8,7 @@
     "access": "public"
   },
   "dependencies": {
-    "@ma-shop/is": "^0.0.7",
+    "@ma-shop/is": "^0.0.8",
     "lodash": "4.17.15"
   },
   "gitHead": "3e213cdf455e3ac36b88a85e1f7c43d1936fe50d"
