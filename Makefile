@@ -16,7 +16,7 @@ clean-deep: clean
 		.DS_STORE \
 		.eslintcache \
 		package-lock.json \
-		packages/*/package-lock.json
+		packages/*/yarn.lock
 
 clean:
 	@rm -rf packages/*/dist
