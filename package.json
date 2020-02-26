@@ -8,6 +8,7 @@
     "@babel/cli": "7.8.4",
     "@babel/core": "7.8.4",
     "@babel/node": "7.8.4",
+    "@babel/runtime": "7.8.4",
     "@react-native-community/async-storage": "1.8.0",
     "babel-jest": "25.1.0",
     "chalk": "3.0.0",
@@ -18,6 +19,7 @@
     "eslint-config-ma-shop-react-native": "0.1.41",
     "fancy-log": "1.3.3",
     "fs-extra": "8.1.0",
+    "globby": "11.0.0",
     "gulp": "4.0.2",
     "gulp-babel": "8.0.0",
     "gulp-newer": "1.4.0",
@@ -100,7 +102,9 @@
         {
           "commonjs": true,
           "caseSensitive": true,
-          "ignore": ["@ma-shop/.+"] 
+          "ignore": [
+            "@ma-shop/.+"
+          ]
         }
       ]
     },
@@ -133,5 +137,6 @@
   "engines": {
     "node": "^12.13.0",
     "npm": "^6.12.0"
-  }
+  },
+  "devDependencies": {}
 }

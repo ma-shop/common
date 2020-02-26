@@ -25,6 +25,7 @@ install:
 	@echo '🔱 installing node modules'
 	@yarn
 	@lerna bootstrap
+	@make build
 
 # This will give you a fresh instance of the project. Run this if you run into a weird build
 # issue you can't solve. Also run this if you have been messing around with dependencies and
@@ -48,6 +49,9 @@ lint-json:
 # This will run all the markdown files through prettier
 lint-md:
 	@prettier 'packages/*/**/*.md' *.md --write --parser markdown
+
+link-global:
+	@lerna exec 'yarn link --force'
 
 
 # Runs all the tests with code coverage

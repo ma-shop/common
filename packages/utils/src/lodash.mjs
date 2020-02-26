@@ -1,3 +1,6 @@
+import { kebabCase } from 'lodash'
+
+
 export {
   clamp,
   debounce,
@@ -5,7 +8,6 @@ export {
   pick,
   omit,
   uniqueId,
-  round,
   camelCase,
   kebabCase,
   lowerCase,
@@ -14,3 +16,5 @@ export {
   upperCase,
   find,
 } from 'lodash'
+
+export const paramCase = kebabCase
