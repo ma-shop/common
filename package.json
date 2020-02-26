@@ -1,5 +1,5 @@
 {
-  "name": "utils",
+  "name": "common",
   "private": true,
   "scripts": {
     "test": "make test"
@@ -58,13 +58,13 @@
       "jsx"
     ],
     "testMatch": [
-      "<rootDir>/packages/*/test/**/*.test.{js,mjs,jsx}"
+      "<rootDir>/utils/*/test/**/*.test.{js,mjs,jsx}"
     ],
     "transform": {
       "^.+\\.m?jsx?$": "<rootDir>/node_modules/babel-jest/build/index.js"
     },
     "collectCoverageFrom": [
-      "<rootDir>/packages/*/src/**/*.{js,mjs,jsx}"
+      "<rootDir>/utils/*/src/**/*.{js,mjs,jsx}"
     ],
     "coverageDirectory": "coverage"
   },
@@ -111,7 +111,7 @@
     "overrides": [
       {
         "files": [
-          "packages/*/test/**/*.test.@(mjs|js|jsx)",
+          "utils/*/test/**/*.test.@(mjs|js|jsx)",
           "test/**"
         ],
         "extends": [
@@ -125,7 +125,7 @@
     ]
   },
   "eslintIgnore": [
-    "packages/*/node_modules",
+    "utils/*/node_modules",
     "dist"
   ],
   "prettier": {

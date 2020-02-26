@@ -1,4 +1,4 @@
 fastlane/README.md
 CHANGELOG.md
 package.json
-packages/utils/packages.json
+utils/utils/packages.json

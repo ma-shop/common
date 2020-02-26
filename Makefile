@@ -11,15 +11,15 @@ clean-deep: clean
 	@echo '💣 💣 Remove all the things 💣 💣'
 	@rm -rf \
 		node_modules \
-		packages/*/node_modules \
+		utils/*/node_modules \
 		*.log \
 		.DS_STORE \
 		.eslintcache \
 		package-lock.json \
-		packages/*/package-lock.json
+		utils/*/package-lock.json
 
 clean:
-	@rm -rf packages/*/dist
+	@rm -rf utils/*/dist
 
 install:
 	@echo '🔱 installing node modules'
@@ -42,13 +42,13 @@ lint:
 	@make lint-js lint-json lint-md --jobs
 # This will run all the js files through prettier, then through eslint
 lint-js:
-	@eslint 'packages/*/**/*.@(js|mjs|jsx)' '*@(js|mjs|jsx)' --cache --fix
+	@eslint 'utils/*/**/*.@(js|mjs|jsx)' '*@(js|mjs|jsx)' --cache --fix
 # This will run all the json files through prettier
 lint-json:
-	@prettier 'packages/*/**/*.json' *.json --write --parser json
+	@prettier 'utils/*/**/*.json' *.json --write --parser json
 # This will run all the markdown files through prettier
 lint-md:
-	@prettier 'packages/*/**/*.md' *.md --write --parser markdown
+	@prettier 'utils/*/**/*.md' *.md --write --parser markdown
 
 link-global:
 	@lerna exec 'yarn link --force'

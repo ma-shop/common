@@ -12,12 +12,13 @@
     "react-native-device-info": "5.5.3"
   },
   "peerDependencies": {
-    "@ma-shop/is": "0.0.6",
-    "@ma-shop/utils": "0.0.7",
+    "@ma-shop/is": "0.0.8",
+    "@ma-shop/utils": "0.0.8",
     "react": "16.12.0",
     "react-native": "0.61.5"
   },
   "devDependencies": {
-    "@ma-shop/is": "^0.0.8"
+    "@ma-shop/is": "^0.0.8",
+    "@ma-shop/utils": "0.0.8"
   }
 }
