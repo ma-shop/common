@@ -68,7 +68,7 @@ export class LocaleManager {
       alpha3: 'GBR',
       curreny: 'GBP',
       moment: 'en-gb',
-      isMarketCountry: false,
+      isMarketCountry: true,
     },
     {
       locale: 'zh-HK',
@@ -235,7 +235,7 @@ export class LocaleManager {
 
   ///# @name parse
   ///# @description parse anything associated with a locale.
-  ///# @returns {object} - Allt he information for that locale
+  ///# @returns {object} - All the information for that locale
   ///# ```js
   ///# {
   ///#   locale: 'en-US',

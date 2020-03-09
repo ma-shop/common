@@ -18,7 +18,7 @@
 export function setStateAsync (state) {
   return new Promise((resolve) => {
     // this guarantees that the setState is async so you don't get any
-    // false positive tests becuase it won't run the setState until
+    // false positive tests because it won't run the setState until
     // the next tick
     // aka this type of test would pass (no it's not real but you should get the idea)
     // ```

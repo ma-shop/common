@@ -59,6 +59,7 @@ link-global:
 test:
 	@echo '💈 running unit tests'
 	@jest --verbose $(args)
+
 # run tests with coverage
 test-coverage:
 	@make test -- --coverage

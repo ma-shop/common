@@ -1,13 +1,7 @@
 // @note can't import shallow or ShallowWrapper specifically
-// import React from 'react'
 import Adapter from 'enzyme-adapter-react-16'
 import Enzyme from 'enzyme'
-// this is required because something overwrites the default Promise with core-js,
-// and the version of core-js sucks and breaks most of the tests.
-// So @babel/polyfill is used to fix it. Which it actually just uses a different version
-// of core-js to fix it.
-// @todo remove this bs when possible
-// import '@babel/polyfill'
+
 
 Enzyme.configure({ adapter: new Adapter() })
 

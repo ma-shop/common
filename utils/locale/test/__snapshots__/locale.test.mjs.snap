@@ -36,6 +36,24 @@ exports[`locale en-CA moment 1`] = `"en-ca"`;
 
 exports[`locale en-CA name 1`] = `"Canada"`;
 
+exports[`locale en-GB alpha2 1`] = `"GB"`;
+
+exports[`locale en-GB alpha3 1`] = `"GBR"`;
+
+exports[`locale en-GB country 1`] = `"GB"`;
+
+exports[`locale en-GB curreny 1`] = `"GBP"`;
+
+exports[`locale en-GB isMarketCountry 1`] = `true`;
+
+exports[`locale en-GB language 1`] = `"en"`;
+
+exports[`locale en-GB locale 1`] = `"en-GB"`;
+
+exports[`locale en-GB moment 1`] = `"en-gb"`;
+
+exports[`locale en-GB name 1`] = `"United Kingdom"`;
+
 exports[`locale en-HK alpha2 1`] = `"HK"`;
 
 exports[`locale en-HK alpha3 1`] = `"HKG"`;

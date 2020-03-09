@@ -14,6 +14,7 @@ function stupidWorkAroundForReactNative (pkg) {
     case '@ma-shop/react': return require('@ma-shop/react')
     case '@ma-shop/react-native': return require('@ma-shop/react-native')
     case '@ma-shop/apollo': return require('@ma-shop/apollo')
+    // @note this can't be required because it uses the built in `fs` library
     // case '@ma-shop/files': return require('@ma-shop/files')
     default:
   }

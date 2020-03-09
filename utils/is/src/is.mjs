@@ -28,6 +28,10 @@ export const is = {
     return false
   },
 
+  /// @name json
+  /// @description This will check to see if the string is json or not
+  /// @arg {*} obj - The item to test against
+  /// @returns {boolean}
   json (obj) {
     if (!is.string(obj)) return false
 
@@ -70,7 +74,7 @@ export const is = {
   },
 
   /// @name null
-  /// @descriptions Determins if something is null or undefined
+  /// @descriptions Determines if something is null or undefined
   /// @arg {*} obj - The item to test against
   /// @returns {boolean}
   null (obj) {
@@ -82,15 +86,10 @@ export const is = {
   /// @arg {*} obj - The item to test against
   /// @returns {boolean}
   empty (obj) {
-    if (is.falsy(obj)) {
-      return true
-    } else if (is.string(obj)) {
-      return !obj.trim()
-    } else if (is.array(obj)) {
-      return !obj.find((item) => !is.empty(item))
-    } else if (is.object(obj)) {
-      return !Object.keys(obj).length
-    }
+    if (is.falsy(obj)) return true
+    if (is.string(obj)) return !obj.trim()
+    if (is.array(obj)) return !obj.find((item) => !is.empty(item))
+    if (is.object(obj)) return !Object.keys(obj).length
     return false
   },
 
