@@ -1,0 +1,13 @@
+{
+  "npmClient": "yarn",
+  "packages": ["utils/*"],
+  "version": "independent",
+  "ignoreChanges": ["ignored-file", "*.md"],
+  "command": {
+    "publish": {
+      "npmClientArgs": ["--access public --no-verify-access"],
+      "ignoreChanges": ["*.md", "utils/*/test/**"]
+    }
+  },
+  "npmClientArgs": ["--no-lockfile --no-verify-access"]
+}

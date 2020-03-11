@@ -1,7 +1,7 @@
 # Common
 
 - [x] @ma-shop/utils
-  - [x] for all of these utils you would be able to access them through  `@ma-shop/utils`
+  - [x] for all of these utils you would be able to access them through `@ma-shop/utils`
   - [x] export out lodash methods
     - `clamp`
     - `debounce`
@@ -57,6 +57,4 @@
 - [ ] @ma-shop/user (idk if this one is possible without reworking it)
 - [ ] color (I'm adding this to my personal github)
 
-
-
-- [ ] @ma-shop/components
+* [ ] @ma-shop/components

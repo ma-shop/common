@@ -1,0 +1,14 @@
+{
+  "name": "@ma-shop/files",
+  "version": "0.0.10",
+  "main": "dist/index.js",
+  "author": "Tyler Benton",
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
+  "dependencies": {
+    "globby": "11.0.0"
+  },
+  "gitHead": "3e213cdf455e3ac36b88a85e1f7c43d1936fe50d"
+}
