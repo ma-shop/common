@@ -3,6 +3,7 @@
 // !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
 export * from './delay'
+export * from './haptic'
 export * from './lodash'
 export * from './noop'
 export * from './packages'
