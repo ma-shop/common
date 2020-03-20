@@ -10,7 +10,7 @@
   "dependencies": {
     "@ma-shop/apollo": "^0.0.11",
     "@ma-shop/files": "^0.0.11",
-    "@ma-shop/haptic": "^0.0.10",
+    "@ma-shop/haptic": "^0.0.1",
     "@ma-shop/is": "^0.0.11",
     "@ma-shop/locale": "^0.0.11",
     "@ma-shop/react": "^0.0.11",
