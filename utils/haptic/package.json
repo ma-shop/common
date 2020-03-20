@@ -1,0 +1,14 @@
+{
+  "name": "@ma-shop/haptic",
+  "version": "0.0.10",
+  "main": "dist/index.js",
+  "author": "William Lacy",
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
+  "gitHead": "3e213cdf455e3ac36b88a85e1f7c43d1936fe50d",
+  "dependencies": {
+    "react-native-haptic-feedback": "1.9.0"
+  }
+}
