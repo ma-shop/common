@@ -2,7 +2,7 @@ import { validate } from 'luhn'
 
 
 export const creditCard = {
-  cardRegex: [
+  types: [
     {
       type: 'americanExpress',
       regex: /^3[47][0-9]{2,13}/,
@@ -83,7 +83,7 @@ export const creditCard = {
   /// @param {int, string} - card number to be evaluated
   /// @returns {string, null} - card type or null
   getCardType (number) {
-    const card = creditCard.cardRegex.find(({ regex }) => regex.test(number.toString()))
+    const card = creditCard.types.find(({ regex }) => regex.test(number.toString()))
 
     return card?.type
   },
@@ -103,7 +103,10 @@ export const creditCard = {
     number,
     year,
   }) {
-    return creditCard.isValidCardNumber(number) && creditCard.isValidExpiration({ month, year }) &&
+    return (
+      creditCard.isValidCardNumber(number) &&
+      creditCard.isValidExpiration({ month, year }) &&
       creditCard.isValidCvv(cvv)
+    )
   },
 }
