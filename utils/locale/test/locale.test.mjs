@@ -2,25 +2,44 @@ import { LocaleManager } from '../src/locale'
 
 
 describe('locale', () => {
-  let locale
+  let l
   beforeEach(() => {
-    locale = new LocaleManager()
+    l = new LocaleManager()
   })
 
   test('parse', () => {
-    const obj = locale.parse('en-US')
+    const obj = l.parse('en-US')
 
     expect(obj).toMatchSnapshot()
-    expect(locale.parse('United States')).toBe(obj)
-    expect(locale.parse('US')).toBe(obj)
-    expect(locale.parse('USA')).toBe(obj)
-    expect(locale.parse('USD')).toBe(obj)
+    expect(l.parse('United States')).toBe(obj)
+    expect(l.parse('US')).toBe(obj)
+    expect(l.parse('USA')).toBe(obj)
+    expect(l.parse('USD')).toBe(obj)
+  })
+
+  test('is', () => {
+    l.setLocale('en-US')
+
+    expect(l.is('en-US')).toBeTruthy()
+    expect(l.is('United States')).toBeTruthy()
+    expect(l.is('en')).toBeTruthy()
+    expect(l.is('US')).toBeTruthy()
+    expect(l.is('US')).toBeTruthy()
+    expect(l.is('USA')).toBeTruthy()
+    expect(l.is('USD')).toBeTruthy()
+
+    expect(l.is(null)).toBeFalsy()
+    expect(l.is(undefined)).toBeFalsy()
+    expect(l.is('asia')).toBeFalsy()
+    expect(l.is('HK')).toBeFalsy()
+    expect(l.is('TW')).toBeFalsy()
+    expect(l.is('SG')).toBeFalsy()
   })
 
   describe.each(LocaleManager.marketLocales)('%s', (current) => {
     test.each(Object.keys(LocaleManager.localeItems[0]))('%s', (key) => {
-      locale.setLocale(current)
-      expect(locale[key]).toMatchSnapshot()
+      l.setLocale(current)
+      expect(l[key]).toMatchSnapshot()
     })
   })
 })
