@@ -1,6 +1,6 @@
 {
   "name": "@ma-shop/react-native",
-  "version": "0.0.13",
+  "version": "0.0.14",
   "main": "dist/index.js",
   "author": "Tyler Benton",
   "license": "MIT",
@@ -16,6 +16,6 @@
   },
   "devDependencies": {
     "@ma-shop/is": "^0.0.11",
-    "@ma-shop/utils": "^0.0.13"
+    "@ma-shop/utils": "^0.0.14"
   }
 }
