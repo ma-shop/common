@@ -53,7 +53,7 @@ export class LocaleManager {
   ///#   country: 'US',
   ///#   alpha2: 'US',
   ///#   alpha3: 'USA',
-  ///#   curreny: 'USD',
+  ///#   currency: 'USD',
   ///#   moment: 'en',
   ///#   isMarketCountry: true,
   ///# }

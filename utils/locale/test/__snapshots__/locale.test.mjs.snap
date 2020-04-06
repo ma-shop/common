@@ -6,7 +6,7 @@ exports[`locale en-AU alpha3 1`] = `"AUS"`;
 
 exports[`locale en-AU country 1`] = `"AU"`;
 
-exports[`locale en-AU curreny 1`] = `"AUD"`;
+exports[`locale en-AU currency 1`] = `"AUD"`;
 
 exports[`locale en-AU isMarketCountry 1`] = `true`;
 
@@ -24,7 +24,7 @@ exports[`locale en-CA alpha3 1`] = `"CAN"`;
 
 exports[`locale en-CA country 1`] = `"CA"`;
 
-exports[`locale en-CA curreny 1`] = `"CAD"`;
+exports[`locale en-CA currency 1`] = `"CAD"`;
 
 exports[`locale en-CA isMarketCountry 1`] = `true`;
 
@@ -42,7 +42,7 @@ exports[`locale en-GB alpha3 1`] = `"GBR"`;
 
 exports[`locale en-GB country 1`] = `"GB"`;
 
-exports[`locale en-GB curreny 1`] = `"GBP"`;
+exports[`locale en-GB currency 1`] = `"GBP"`;
 
 exports[`locale en-GB isMarketCountry 1`] = `true`;
 
@@ -60,7 +60,7 @@ exports[`locale en-HK alpha3 1`] = `"HKG"`;
 
 exports[`locale en-HK country 1`] = `"HK"`;
 
-exports[`locale en-HK curreny 1`] = `"HKD"`;
+exports[`locale en-HK currency 1`] = `"HKD"`;
 
 exports[`locale en-HK isMarketCountry 1`] = `true`;
 
@@ -78,7 +78,7 @@ exports[`locale en-MY alpha3 1`] = `"MYS"`;
 
 exports[`locale en-MY country 1`] = `"MY"`;
 
-exports[`locale en-MY curreny 1`] = `"MYR"`;
+exports[`locale en-MY currency 1`] = `"MYR"`;
 
 exports[`locale en-MY isMarketCountry 1`] = `true`;
 
@@ -96,7 +96,7 @@ exports[`locale en-SG alpha3 1`] = `"SPG"`;
 
 exports[`locale en-SG country 1`] = `"SG"`;
 
-exports[`locale en-SG curreny 1`] = `"SGD"`;
+exports[`locale en-SG currency 1`] = `"SGD"`;
 
 exports[`locale en-SG isMarketCountry 1`] = `true`;
 
@@ -114,7 +114,7 @@ exports[`locale en-US alpha3 1`] = `"USA"`;
 
 exports[`locale en-US country 1`] = `"US"`;
 
-exports[`locale en-US curreny 1`] = `"USD"`;
+exports[`locale en-US currency 1`] = `"USD"`;
 
 exports[`locale en-US isMarketCountry 1`] = `true`;
 
@@ -132,7 +132,7 @@ exports[`locale ms-MY alpha3 1`] = `"MYS"`;
 
 exports[`locale ms-MY country 1`] = `"MY"`;
 
-exports[`locale ms-MY curreny 1`] = `"MYR"`;
+exports[`locale ms-MY currency 1`] = `"MYR"`;
 
 exports[`locale ms-MY isMarketCountry 1`] = `true`;
 
@@ -149,7 +149,7 @@ Object {
   "alpha2": "US",
   "alpha3": "USA",
   "country": "US",
-  "curreny": "USD",
+  "currency": "USD",
   "isMarketCountry": true,
   "language": "en",
   "locale": "en-US",
@@ -164,7 +164,7 @@ exports[`locale zh-HK alpha3 1`] = `"HKG"`;
 
 exports[`locale zh-HK country 1`] = `"HK"`;
 
-exports[`locale zh-HK curreny 1`] = `"HKD"`;
+exports[`locale zh-HK currency 1`] = `"HKD"`;
 
 exports[`locale zh-HK isMarketCountry 1`] = `true`;
 
@@ -182,7 +182,7 @@ exports[`locale zh-MY alpha3 1`] = `"MYS"`;
 
 exports[`locale zh-MY country 1`] = `"MY"`;
 
-exports[`locale zh-MY curreny 1`] = `"MYR"`;
+exports[`locale zh-MY currency 1`] = `"MYR"`;
 
 exports[`locale zh-MY isMarketCountry 1`] = `true`;
 
@@ -200,7 +200,7 @@ exports[`locale zh-SG alpha3 1`] = `"SPG"`;
 
 exports[`locale zh-SG country 1`] = `"SG"`;
 
-exports[`locale zh-SG curreny 1`] = `"SGD"`;
+exports[`locale zh-SG currency 1`] = `"SGD"`;
 
 exports[`locale zh-SG isMarketCountry 1`] = `true`;
 
@@ -218,7 +218,7 @@ exports[`locale zh-TW alpha3 1`] = `"TWN"`;
 
 exports[`locale zh-TW country 1`] = `"TW"`;
 
-exports[`locale zh-TW curreny 1`] = `"TWD"`;
+exports[`locale zh-TW currency 1`] = `"TWD"`;
 
 exports[`locale zh-TW isMarketCountry 1`] = `true`;
 
