@@ -8,12 +8,6 @@
     "access": "public"
   },
   "dependencies": {
-    "@ma-shop/apollo": "^0.0.11",
-    "@ma-shop/files": "^0.0.11",
-    "@ma-shop/is": "^0.0.11",
-    "@ma-shop/locale": "^0.0.14",
-    "@ma-shop/react": "^0.0.11",
-    "@ma-shop/react-native": "^0.0.15",
     "lodash": "4.17.15"
   },
   "gitHead": "3e213cdf455e3ac36b88a85e1f7c43d1936fe50d"
