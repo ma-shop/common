@@ -1,0 +1,10 @@
+{
+  "name": "@ma-shop/url",
+  "version": "0.0.1",
+  "main": "dist/index.js",
+  "author": "Matt Murtagh",
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  }
+}

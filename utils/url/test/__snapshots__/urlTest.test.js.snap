@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`urlReplace takes in an object with more than one key but fails because the string only has one value to replace 1`] = `
+"Length mismatch, keys potentially incorrect.
+
+    Url Placeholders(1): {{prodId}}
+
+    Values(2): prodId,allPerms"
+`;
+
+exports[`urlReplace takes in an object with one key but fails because the string only has two values to replace 1`] = `
+"Length mismatch, keys potentially incorrect.
+
+    Url Placeholders(2): {{prodId}},{{allPerms}}
+
+    Values(1): prodId"
+`;

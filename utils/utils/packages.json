@@ -1,9 +1,9 @@
 [
   "apollo",
-  "credit-cards",
   "files",
   "is",
   "locale",
   "react",
-  "react-native"
+  "react-native",
+  "url"
 ]
