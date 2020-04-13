@@ -1,34 +1,42 @@
-/* eslint-disable global-require, import/no-dynamic-require  */
+// !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+// !!! This file is generated do not modify it manually because it will be overwritten
+// !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
-import pkgs from '../packages.json'
+// is this stupid to do. Yes. But unfortuantly you have to require packages
+// specifically, you can't use any variables in a require function in react-native
+/* eslint-disable global-require, no-empty, import/no-extraneous-dependencies */
 
-
-// @todo uninstall all these packages when react-native metro bundler doesn't suck and allows
-// you to import packages dynamically. But for now all these packages have to be installed.
-// https://github.com/facebook/metro/pull/511
-
-function stupidWorkAroundForReactNative (pkg) {
-  switch (pkg) {
-    case '@ma-shop/is': return require('@ma-shop/is')
-    case '@ma-shop/locale': return require('@ma-shop/locale')
-    case '@ma-shop/react': return require('@ma-shop/react')
-    case '@ma-shop/react-native': return require('@ma-shop/react-native')
-    case '@ma-shop/apollo': return require('@ma-shop/apollo')
-    // @note this can't be required because it uses the built in `fs` library
-    // case '@ma-shop/files': return require('@ma-shop/files')
-    default:
+try {
+  const pkg = require('@ma-shop/apollo')
+  if (pkg) {
+    Object.assign(module.exports, pkg)
   }
-}
+} catch (e) { }
 
-pkgs
-  .map((pkg) => `@ma-shop/${pkg}`)
-  .forEach((_) => {
-    try {
-      const pkg = stupidWorkAroundForReactNative(_)
-      if (pkg) {
-        Object.assign(module.exports, pkg)
-      }
-    } catch (e) {
-      console.log(`error trying to import ${_}`, e)
-    }
-  })
+try {
+  const pkg = require('@ma-shop/is')
+  if (pkg) {
+    Object.assign(module.exports, pkg)
+  }
+} catch (e) { }
+
+try {
+  const pkg = require('@ma-shop/locale')
+  if (pkg) {
+    Object.assign(module.exports, pkg)
+  }
+} catch (e) { }
+
+try {
+  const pkg = require('@ma-shop/react')
+  if (pkg) {
+    Object.assign(module.exports, pkg)
+  }
+} catch (e) { }
+
+try {
+  const pkg = require('@ma-shop/react-native')
+  if (pkg) {
+    Object.assign(module.exports, pkg)
+  }
+} catch (e) { }
