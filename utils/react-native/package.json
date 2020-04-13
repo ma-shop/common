@@ -1,6 +1,6 @@
 {
   "name": "@ma-shop/react-native",
-  "version": "0.0.15",
+  "version": "0.0.16",
   "main": "dist/index.js",
   "scripts": {
     "postinstall": "node ./post-install.js"
@@ -19,6 +19,6 @@
   },
   "devDependencies": {
     "@ma-shop/is": "^0.0.11",
-    "@ma-shop/utils": "^0.0.15"
+    "@ma-shop/utils": "^0.0.16"
   }
 }
