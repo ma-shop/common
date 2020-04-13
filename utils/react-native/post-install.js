@@ -2,7 +2,8 @@ const fs = require('fs').promises
 
 
 async function run () {
-  const basePath = `${process.cwd()}/node_modules/@ma-shop`
+  const rootDir = process.cwd().split('node_modules')[0]
+  const basePath = `${rootDir}/node_modules/@ma-shop`
   const packagesPath = `${basePath}/utils/dist/packages.js`
   const file = `${await fs.readFile(packagesPath).catch(() => '')}`
   const packages = await fs.readdir(basePath).catch(() => [])
