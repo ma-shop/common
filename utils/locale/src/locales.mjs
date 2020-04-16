@@ -106,7 +106,7 @@ export const locales = [
     language: 'en',
     country: 'SG',
     alpha2: 'SG',
-    alpha3: 'SPG',
+    alpha3: 'SGP',
     currency: 'SGD',
     moment: 'en-SG',
     isMarketCountry: true,
@@ -117,7 +117,7 @@ export const locales = [
     language: 'zh',
     country: 'SG',
     alpha2: 'SG',
-    alpha3: 'SPG',
+    alpha3: 'SGP',
     currency: 'SGD',
     // simplified chinese
     moment: 'zh-cn',
@@ -129,7 +129,7 @@ export const locales = [
     language: 'zh-Hans',
     country: 'SG',
     alpha2: 'SG',
-    alpha3: 'SPG',
+    alpha3: 'SGP',
     currency: 'SGD',
     // simplified chinese
     moment: 'zh-cn',

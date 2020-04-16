@@ -92,7 +92,7 @@ exports[`locale en-MY name 1`] = `"Malaysia - English"`;
 
 exports[`locale en-SG alpha2 1`] = `"SG"`;
 
-exports[`locale en-SG alpha3 1`] = `"SPG"`;
+exports[`locale en-SG alpha3 1`] = `"SGP"`;
 
 exports[`locale en-SG country 1`] = `"SG"`;
 
@@ -196,7 +196,7 @@ exports[`locale zh-MY name 1`] = `"马来西亚"`;
 
 exports[`locale zh-SG alpha2 1`] = `"SG"`;
 
-exports[`locale zh-SG alpha3 1`] = `"SPG"`;
+exports[`locale zh-SG alpha3 1`] = `"SGP"`;
 
 exports[`locale zh-SG country 1`] = `"SG"`;
 
