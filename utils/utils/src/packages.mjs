@@ -14,6 +14,13 @@ try {
 } catch (e) { }
 
 try {
+  const pkg = require('@ma-shop/haptic')
+  if (pkg) {
+    Object.assign(module.exports, pkg)
+  }
+} catch (e) { }
+
+try {
   const pkg = require('@ma-shop/is')
   if (pkg) {
     Object.assign(module.exports, pkg)
