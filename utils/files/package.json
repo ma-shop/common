@@ -8,6 +8,7 @@
     "access": "public"
   },
   "dependencies": {
+    "@ma-shop/utils": "*",
     "globby": "11.0.0"
   },
   "gitHead": "3e213cdf455e3ac36b88a85e1f7c43d1936fe50d"

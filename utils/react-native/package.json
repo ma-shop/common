@@ -2,9 +2,7 @@
   "name": "@ma-shop/react-native",
   "version": "0.0.18",
   "main": "dist/index.js",
-  "scripts": {
-    "postinstall": "node ./post-install.js"
-  },
+  "scripts": {},
   "author": "Tyler Benton",
   "license": "MIT",
   "publishConfig": {
