@@ -6,3 +6,4 @@ package-lock.json
 dist/
 .eslintcache
 *.log
+utils/utils/packages.js

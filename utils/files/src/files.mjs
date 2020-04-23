@@ -1,52 +1,13 @@
 import fs from 'fs'
 
 import globby from 'globby'
+import { normalize } from '@ma-shop/utils'
 
 // @todo make this a global util at some point
 const map = (obj, callback) => Promise.all([].concat(obj).map(callback))
 
 
 export class Files {
-  /// @name normalize
-  /// @author Tyler Benton
-  /// @description
-  /// Removes trailing/leading blank lines. Removes extra whitespace before all the lines that
-  /// are passed without affecting the formatting of the passes string. Then removes
-  /// all whitespace at the end of each line.
-  /// @arg {string, array} content - The content you want to be normalized
-  /// @returns {string} - The normalized string
-  /// @example
-  /// let content = `
-  ///
-  ///     Lorem ipsum dolor sit amet,
-  ///     consectetur adipisicing elit.
-  ///
-  /// ` aka "\n\n    Lorem ipsum dolor sit amet,\n     consectetur adipisicing elit.\n\n"
-  ///
-  /// normalize(content) // "Lorem ipsum dolor sit amet,\nconsectetur adipisicing elit."
-  static normalize (str) {
-    // this allows arrays and strings to be passed
-    const content = typeof str === 'string' ? str.split('\n') : str
-    // remove blank lines from the start
-    while (content.length && !content[0].trim().length) content.shift()
-    // remove blank lines from the end
-    while (content.length && !content[content.length - 1].trim().length) content.pop()
-    // get the indent of the string
-    const indentNumber = content
-      .join('\n')
-      // gets the extra whitespace at the beginning of the line and returns a map of the spaces
-      .match(/^\s*/gm)
-      // sorts the spaces array from smallest to largest and then checks
-      // returns the length of the first item in the array
-      .sort((a, b) => a.length - b.length)[0].length
-
-    return content
-      // remove extra whitespace from the beginning of each line
-      .map((line) => line.slice(indentNumber))
-      .join('\n') // converts content to string
-      .replace(/[^\S\r\n]+$/gm, '') // removes all trailing white spaces from each line
-  }
-
   static configs = {
     exports: {
       banner: 'This file is generated do not modify it manually because it will be overwritten',
@@ -66,7 +27,7 @@ export class Files {
       filter: Boolean,
       indexFile: 'index.js',
       content (files) {
-        return Files.normalize(`
+        return normalize(`
           // unfortuantly you have to require image files in order for them to work
           // with react-native and using global-require is be best way to handle it
           /* eslint-disable global-require */
@@ -84,11 +45,11 @@ export class Files {
   }
 
   static banner (_ = '') {
-    const banner = Files.normalize(_).split('\n').join('      // !!! ')
+    const banner = normalize(_).split('\n').join('      // !!! ')
 
     if (!banner) return ''
 
-    return `${Files.normalize(`
+    return `${normalize(`
       // !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
       // !!! ${banner}
       // !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!

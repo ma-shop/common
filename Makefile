@@ -16,7 +16,8 @@ clean-deep: clean
 		.DS_STORE \
 		.eslintcache \
 		package-lock.json \
-		utils/*/package-lock.json
+		utils/*/package-lock.json \
+		utils/utils/packages.js
 
 clean:
 	@rm -rf utils/*/dist

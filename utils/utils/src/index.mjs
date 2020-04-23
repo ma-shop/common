@@ -5,5 +5,6 @@
 export * from './delay'
 export * from './lodash'
 export * from './noop'
+export * from './normalize'
 export * from './packages'
 export * from './round'

@@ -126,6 +126,7 @@
   },
   "eslintIgnore": [
     "utils/*/node_modules",
+    "utils/utils/packages.js",
     "dist"
   ],
   "prettier": {
