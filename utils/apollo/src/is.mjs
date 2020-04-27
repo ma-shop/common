@@ -39,7 +39,7 @@ is.network = {
   ///# @arg {int} networkStatus
   ///# @returns {boolean} eg. true | false
   refetching (networkStatus = 0) {
-    return [ 1, 2, 4 ].includes(networkStatus)
+    return networkStatus === 4
   },
   ///# @name finished
   ///# @author Alex Andreescu
