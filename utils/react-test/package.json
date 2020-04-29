@@ -1,0 +1,20 @@
+{
+  "name": "@ma-shop/react-test",
+  "version": "0.0.1",
+  "main": "dist/index.js",
+  "author": "William Lacy",
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
+  "gitHead": "3e213cdf455e3ac36b88a85e1f7c43d1936fe50d",
+  "peerDependencies": {
+    "react": "*",
+    "react-native": "*"
+  },
+  "dependencies": {
+    "@ma-shop/is": "0.0.11",
+    "enzyme": "3.11.0",
+    "prettier": "2.0.5"
+  }
+}
