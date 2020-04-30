@@ -4,3 +4,4 @@
 
 export * from './interactions'
 export * from './is'
+export * from './shapes'
