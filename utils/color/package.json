@@ -1,6 +1,6 @@
 {
   "name": "@ma-shop/color",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "main": "dist/index.js",
   "author": "Tyler Benton",
   "license": "MIT",
@@ -9,5 +9,6 @@
   },
   "dependencies": {
     "color-set": "0.0.4"
-  }
+  },
+  "gitHead": "6e939449bf421ea43871be477ccc4c340c8ff432"
 }
