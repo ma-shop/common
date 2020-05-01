@@ -30,13 +30,13 @@ describe('network', () => {
 
   test('refetching', () => {
     expect(is.network.refetching(null)).toBeFalsy()
+    expect(is.network.refetching(1)).toBeFalsy()
+    expect(is.network.refetching(2)).toBeFalsy()
     expect(is.network.refetching(3)).toBeFalsy()
     expect(is.network.refetching(6)).toBeFalsy()
     expect(is.network.refetching(7)).toBeFalsy()
     expect(is.network.refetching(8)).toBeFalsy()
 
-    expect(is.network.refetching(1)).toBeTruthy()
-    expect(is.network.refetching(2)).toBeTruthy()
     expect(is.network.refetching(4)).toBeTruthy()
   })
 
