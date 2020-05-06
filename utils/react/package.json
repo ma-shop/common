@@ -1,6 +1,6 @@
 {
   "name": "@ma-shop/react",
-  "version": "0.0.11",
+  "version": "0.0.12-0",
   "main": "dist/index.js",
   "author": "Tyler Benton",
   "license": "MIT",
@@ -9,7 +9,8 @@
   },
   "gitHead": "3e213cdf455e3ac36b88a85e1f7c43d1936fe50d",
   "dependencies": {
-    "hoist-non-react-statics": "3.3.2"
+    "hoist-non-react-statics": "3.3.2",
+    "prop-types": "15.7.2"
   },
   "peerDependencies": {
     "@ma-shop/is": "0.0.6",

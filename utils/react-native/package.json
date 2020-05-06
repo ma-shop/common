@@ -1,6 +1,6 @@
 {
   "name": "@ma-shop/react-native",
-  "version": "0.0.19",
+  "version": "0.0.20-0",
   "main": "dist/index.js",
   "scripts": {},
   "author": "Tyler Benton",
@@ -18,5 +18,8 @@
   "devDependencies": {
     "@ma-shop/is": "^0.0.11",
     "@ma-shop/utils": "^0.0.18"
+  },
+  "dependencies": {
+    "prop-types": "15.7.2"
   }
 }
