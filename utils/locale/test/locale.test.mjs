@@ -36,10 +36,14 @@ describe('locale', () => {
     expect(l.is('SG')).toBeFalsy()
   })
 
-  describe.each(LocaleManager.marketLocales)('%s', (current) => {
-    test.each(Object.keys(LocaleManager.localeItems[0]))('%s', (key) => {
-      l.setLocale(current)
-      expect(l[key]).toMatchSnapshot()
+  {
+    const obj = new LocaleManager()
+
+    describe.each(obj.marketLocales)('%s', (current) => {
+      test.each(Object.keys(obj.locales[0]))('%s', (key) => {
+        obj.setLocale(current)
+        expect(obj[key]).toMatchSnapshot()
+      })
     })
-  })
+  }
 })

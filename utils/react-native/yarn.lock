@@ -2,10 +2,22 @@
 # yarn lockfile v1
 
 
+"@ma-shop/utils@^0.0.18":
+  version "0.0.18"
+  resolved "https://registry.yarnpkg.com/@ma-shop/utils/-/utils-0.0.18.tgz#b80432130d5e6395b16a7a7913e2d1d7354d2045"
+  integrity sha512-9gHNTeWIz9HQj3Od2LhrtbuVDVMB2MhS+q8TKBaDPOsz7Npjs3TbJcQv3URqHsC2S2Ie6pGzgELzWqzww/Unog==
+  dependencies:
+    lodash "4.17.15"
+
 "js-tokens@^3.0.0 || ^4.0.0":
   version "4.0.0"
   resolved "https://registry.yarnpkg.com/js-tokens/-/js-tokens-4.0.0.tgz#19203fb59991df98e3a287050d4647cdeaf32499"
   integrity sha512-RdJUflcE3cUzKiMqQgsCu06FPu9UdIJO0beYbPhHN4k6apgJtifcoCtT9bcxOpYBtpD2kCM6Sbzg4CausW/PKQ==
+
+lodash@4.17.15:
+  version "4.17.15"
+  resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.15.tgz#b447f6670a0455bbfeedd11392eff330ea097548"
+  integrity sha512-8xOcRHvCjnocdS5cpwXQXVzmmh5e5+saE2QGoeQmbKmRS6J3VQppPOIt0MnmE+4xlZoumy0GPG0D0MVIQbNA1A==
 
 loose-envify@^1.4.0:
   version "1.4.0"
