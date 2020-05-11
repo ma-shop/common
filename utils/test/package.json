@@ -1,0 +1,17 @@
+{
+  "name": "@ma-shop/test",
+  "version": "0.0.2",
+  "main": "dist/index.js",
+  "author": "William Lacy",
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
+  "gitHead": "3e213cdf455e3ac36b88a85e1f7c43d1936fe50d",
+  "peerDependencies": {
+    "@ma-shop/is": "0.0.6"
+  },
+  "devDependencies": {
+    "@ma-shop/is": "^0.0.11"
+  }
+}
