@@ -45,11 +45,9 @@ t.init = (locales) => {
   // [locale]:
   //  { translation: ((your translation obj) }
   // see https://www.i18next.com/overview/getting-started
-  const translations = Object.keys(locales).reduce((previous, current) => {
-    // this appeases eslint
-    const obj = previous
-    obj[current] = { translation: locales[current] }
-    return obj
+  const translations = Object.keys(locales).reduce((prev, next) => {
+    prev[next] = { translation: locales[next] }
+    return prev
   }, {})
 
   return i18n

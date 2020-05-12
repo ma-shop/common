@@ -13,10 +13,6 @@ const find = (values, _, omittedValues = []) => {
 }
 
 export class LocaleManager {
-  constructor (obj) {
-    this.setLocales(obj || locales)
-  }
-
   // stores the current local
   current = 'en-US'
 
