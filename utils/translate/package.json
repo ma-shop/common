@@ -8,7 +8,7 @@
     "access": "public"
   },
   "dependencies": {
-    "i18next": "12.1.0",
+    "i18next": "19.4.4",
     "i18next-sprintf-postprocessor": "0.2.2"
   },
   "peerDependencies": {

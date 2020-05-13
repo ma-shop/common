@@ -40,28 +40,27 @@ t.i18n = i18n
 
 t.setLocale = (language) => i18n.changeLanguage(language)
 
-t.init = (locales) => {
-  // translations object becomes i18next's desired object format, which is:
-  // [locale]:
-  //  { translation: ((your translation obj) }
-  // see https://www.i18next.com/overview/getting-started
-  const translations = Object.keys(locales).reduce((prev, next) => {
-    prev[next] = { translation: locales[next] }
-    return prev
-  }, {})
-
-  return i18n
+t.init = async (locales) => {
+  const translation = await i18n
     .use(sprintf)
     .init({
       // https://www.i18next.com/overview/api#changelanguage
       // setting the language to be `cimode` will ensure the `t` function
       // always returns the key which makes testing easier
       lng: process.env.NODE_ENV === 'test' ? 'cimode' : null,
-      resources: translations,
-      lowerCaseLng: true,
-      fallbackLng: __DEV__ ? 'dev' : 'en-us',
+      // translations object becomes i18next's desired object format, which is:
+      // [locale]: { translation: ((your translation obj) }
+      // see https://www.i18next.com/overview/getting-started
+      resources: Object.keys(locales).reduce((prev, next) => {
+        prev[next] = { translation: locales[next] }
+        return prev
+      }, {}),
+      fallbackLng: 'en-US',
       overloadTranslationOptionHandler: sprintf.overloadTranslationOptionHandler,
     })
-    .then(() => l.onSetLocale(t.setLocale))
+
+  l.onSetLocale(t.setLocale)
+
+  return translation
 }
 
