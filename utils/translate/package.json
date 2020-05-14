@@ -1,0 +1,20 @@
+{
+  "name": "@ma-shop/translate",
+  "version": "0.0.3-2",
+  "main": "dist/index.js",
+  "author": "Tyler Benton",
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
+  "dependencies": {
+    "i18next": "19.4.4",
+    "i18next-sprintf-postprocessor": "0.2.2"
+  },
+  "peerDependencies": {
+    "react": "*"
+  },
+  "devDependencies": {
+    "react": "*"
+  }
+}

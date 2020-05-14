@@ -1,7 +1,5 @@
 import { find as lodashFind, omit } from 'lodash'
 
-import { locales } from './locales'
-
 
 const find = (values, _, omittedValues = []) => {
   let obj = _
@@ -13,31 +11,46 @@ const find = (values, _, omittedValues = []) => {
 }
 
 export class LocaleManager {
-  static localeItems = locales
-
-  static locales = LocaleManager.localeItems.map(({ locale }) => locale)
-
-  static get marketLocales () {
-    return LocaleManager.localeItems
-      .filter(({ isMarketCountry }) => isMarketCountry)
-      .map(({ locale }) => locale)
-  }
-
   // stores the current local
   current = 'en-US'
 
-  // expose locales to the class
-  locales = LocaleManager.locales
+  locales = []
 
   // expose locales to the class
-  marketLocales = LocaleManager.marketLocales
+  // @todo move to shop project
+  get marketLocales () {
+    return this.locales
+      .map((obj) => obj.isMarketCountry && obj.locale)
+      .filter(Boolean)
+  }
 
   setLocale (locale) {
-    if (!this.locales.includes(locale) && locale !== 'cimode') {
+    if (!this.locales.find((obj) => obj.locale === locale) && locale !== 'cimode') {
       throw new Error(`Unsupported locale: ${locale}`)
     }
 
+    this.events.forEach((fn) => fn(locale))
+
     this.current = locale
+  }
+
+  setLocales (obj) {
+    this.locales = obj
+
+    Object.keys(this.locales[0]).forEach((key) => {
+      Object.defineProperty(this, key, {
+        get () {
+          // always exclude moment unless the key is moment because it doesn't make any sense
+          return this.parse(this.current, key === 'moment' ? [] : [ 'moment' ])[key]
+        },
+      })
+    })
+  }
+
+  events = []
+
+  onSetLocale (fn) {
+    this.events.push(fn)
   }
 
   ///# @name parse
@@ -66,7 +79,7 @@ export class LocaleManager {
   ///# // this would return the `en-MY` locale
   ///# l.parse(({ locale }) => locale.includes('MY') && locale.length <= 5)
   parse (obj = this.current, omittedValues) {
-    return find(LocaleManager.localeItems, obj, omittedValues)
+    return find(this.locales, obj, omittedValues)
   }
 
   /// @name is
@@ -91,16 +104,6 @@ export class LocaleManager {
     })
   }
 }
-
-
-Object.keys(LocaleManager.localeItems[0]).forEach((key) => {
-  Object.defineProperty(LocaleManager.prototype, key, {
-    get () {
-      // always exclude moment unless the key is moment because it doesn't make any sense
-      return this.parse(this.current, key === 'moment' ? [] : [ 'moment' ])[key]
-    },
-  })
-})
 
 
 export const l = new LocaleManager()

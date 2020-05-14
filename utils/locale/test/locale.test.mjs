@@ -1,10 +1,12 @@
 import { LocaleManager } from '../src/locale'
+import { locales } from '../src/locales'
 
 
 describe('locale', () => {
   let l
   beforeEach(() => {
     l = new LocaleManager()
+    l.setLocales(locales)
   })
 
   test('parse', () => {
@@ -36,10 +38,15 @@ describe('locale', () => {
     expect(l.is('SG')).toBeFalsy()
   })
 
-  describe.each(LocaleManager.marketLocales)('%s', (current) => {
-    test.each(Object.keys(LocaleManager.localeItems[0]))('%s', (key) => {
-      l.setLocale(current)
-      expect(l[key]).toMatchSnapshot()
+  {
+    const obj = new LocaleManager()
+    obj.setLocales(locales)
+
+    describe.each(obj.marketLocales)('%s', (current) => {
+      test.each(Object.keys(obj.locales[0]))('%s', (key) => {
+        obj.setLocale(current)
+        expect(obj[key]).toMatchSnapshot()
+      })
     })
-  })
+  }
 })
