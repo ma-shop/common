@@ -20,6 +20,7 @@
     "@ma-shop/utils": "^0.0.18"
   },
   "dependencies": {
+    "@react-navigation/native": "5.7.2",
     "prop-types": "15.7.2"
   }
 }

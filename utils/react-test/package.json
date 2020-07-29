@@ -17,5 +17,11 @@
     "enzyme": "3.11.0",
     "enzyme-adapter-react-16": "1.15.2",
     "prettier": "2.0.5"
+  },
+  "eslintConfig": {
+    "extends": ["ma-shop-react-native/test"],
+    "rules": {
+      "react/no-array-index-key": "off"
+    }
   }
 }

@@ -3,4 +3,6 @@
 // !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
 export * from './enzyme'
+export * from './mock-storage'
 export * from './react-test'
+export * from './render-items'
