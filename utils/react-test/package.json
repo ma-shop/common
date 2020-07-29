@@ -1,6 +1,6 @@
 {
   "name": "@ma-shop/react-test",
-  "version": "0.0.5",
+  "version": "0.0.6-alpha.0",
   "main": "dist/index.js",
   "author": "William Lacy",
   "license": "MIT",
@@ -19,7 +19,9 @@
     "prettier": "2.0.5"
   },
   "eslintConfig": {
-    "extends": ["ma-shop-react-native/test"],
+    "extends": [
+      "ma-shop-react-native/test"
+    ],
     "rules": {
       "react/no-array-index-key": "off"
     }
