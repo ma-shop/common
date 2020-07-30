@@ -1,0 +1,20 @@
+{
+  "name": "@ma-shop/permissions",
+  "version": "0.0.1",
+  "main": "dist/index.js",
+  "author": "Tyler Benton",
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
+  "gitHead": "3e213cdf455e3ac36b88a85e1f7c43d1936fe50d",
+  "devDependencies": {
+    "@ma-shop/is": "0.0.11"
+  },
+  "peerDependencies": {
+    "@ma-shop/is": "0.0.11"
+  },
+  "dependencies": {
+    "react-native-permissions": "2.1.5"
+  }
+}
