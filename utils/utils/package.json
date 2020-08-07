@@ -11,7 +11,7 @@
     "access": "public"
   },
   "dependencies": {
-    "lodash": "4.17.15"
+    "lodash": "4.17.19"
   },
   "gitHead": "3e213cdf455e3ac36b88a85e1f7c43d1936fe50d"
 }
