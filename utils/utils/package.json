@@ -1,6 +1,6 @@
 {
   "name": "@ma-shop/utils",
-  "version": "0.0.20-alpha.0",
+  "version": "0.0.20",
   "main": "dist/index.js",
   "author": "Tyler Benton",
   "license": "MIT",
