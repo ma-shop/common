@@ -1,15 +1,13 @@
-import { CommonActions } from '@react-navigation/native'
-
-
-
 export const nav = (() => {
   class Navigation {
+    resetRoute = null
+
     set (obj) {
       this.navigation = obj
     }
 
     ///# @name to
-    ///# @description navigate *to* a page
+    ///# @description navigate to a page
     ///# https://reactnavigation.org/docs/en/navigation-prop.html#navigate-link-to-other-screens
     ///# @example
     ///# nav.to('ProductDetail', { prodId: 13009 })
@@ -42,29 +40,6 @@ export const nav = (() => {
       this.navigation.replace(...args)
     }
 
-    ///# @name params
-    ///# @description shortcut to get the params. Also it will always return an object
-    ///# @example
-    ///# this.nav.params
-    ///# @getter
-    get params () {
-      return {
-
-        // this is really stupid but required for anything under the TabBar to get params
-        ...this.parent?.params || {},
-        ...this.navigation.state?.params || {},
-      }
-    }
-
-    ///# @name state
-    ///# @description returns the current state
-    ///# @example
-    ///# this.nav.state
-    ///# @getter
-    get state () {
-      return this.navigation.state || {}
-    }
-
     ///# @name setParams
     ///# @description sets the params on the current view
     ///# https://reactnavigation.org/docs/en/navigation-prop.html#setparams-make-changes-to-route-params
@@ -74,7 +49,16 @@ export const nav = (() => {
       this.navigation.setParams(params)
     }
 
-    ///# @name setParams
+    ///# @name setOptions
+    ///# @description sets the options on the current view
+    ///# https://reactnavigation.org/docs/navigation-prop/#setoptions
+    ///# @example
+    ///# this.nav.setOptions({})
+    setOptions (options) {
+      this.navigation.setOptions(options)
+    }
+
+    ///# @name isFocused
     ///# @description lets you know if the current view is focused or not
     ///# https://reactnavigation.org/docs/en/navigation-prop.html#isfocused-query-the-focused-state-of-the-screen
     ///# @example
@@ -89,26 +73,44 @@ export const nav = (() => {
     ///# @arg {stirng} event - one of these events `willBlur`, `willFocus`, `didFocus`, `didBlur`
     ///# https://reactnavigation.org/docs/en/navigation-prop.html#addlistener-subscribe-to-updates-to-navigation-lifecycle
     ///# @example
-    ///# this.nav.on('willBlur', (e) => {
-    ///#   console.log('e:', e)
-    ///# })
-    ///# @chainable
+    ///# useEffect(() => {
+    ///#   const unsubscribe = this.nav.on('willBlur', (e) => {
+    ///#     console.log('e:', e)
+    ///#   })
+    ///#
+    ///#   return unsubscribe
+    ///# }, [nav.navigation])
+    ///# @returns {fn} The unsubscribe function to remove the event listener
     on (event, cb) {
       // willBlur, willFocus, didFocus, didBlur
-      this.navigation.addListener(event, cb)
-      return this
+      return this.navigation.addListener(event, cb)
     }
 
-    reset () {
-      return this.navigation.dispatch(
-        CommonActions.reset({
-          index: 0,
-          routes: [ { name: 'Login' } ],
-        }),
-      )
+    ///# @name dispatch
+    ///# @describe dispatches navigation actions
+    ///# @args {object} ...args - same as navigation dispatch
+    dispatch (...args) {
+      return this.navigation.dispatch(...args)
+    }
+
+    ///# @name reset
+    ///# @description resets the navigation
+    ///# @arg {string} name - The route you want to reset it to
+    ///# @note you can set a default route using `nav.setResetRoute`
+    reset (name) {
+      return this.navigation.reset({
+        index: 0,
+        routes: [ { name: name || this.resetRoute } ],
+      })
+    }
+
+    ///# @name setResetRoute
+    ///# @description Sets the default reset route
+    ///# @arg {string} name - the route to reset it to
+    setResetRoute (name) {
+      this.resetRoute = name
     }
   }
 
   return new Navigation()
 })()
-

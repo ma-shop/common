@@ -39,9 +39,7 @@ export const permissions = {
   /// @returns {promise} - promise that resolves to a string representation of the
   /// notification permission (unavailable, denied, blocked, granted)
   async requestNotifications () {
-    const { status } = await rnpRequestNotifications([ 'alert' ])
-
-    return status
+    return (await rnpRequestNotifications([ 'alert' ]))?.status
   },
 
   /// @name requestLocation
@@ -53,9 +51,7 @@ export const permissions = {
   async requestLocation () {
     const status = await request(getLocationPermission())
 
-    if (!is.ios() || status === results.GRANTED) {
-      return status
-    }
+    if (!is.ios() || status === results.GRANTED) return status
 
     // Even though we request Location Always, the user can choose When in Use.
     // If they do this on iOS, the request will return as 'blocked', but checking the When in Use
@@ -92,9 +88,7 @@ export const permissions = {
   async checkLocation () {
     const status = await check(getLocationPermission())
 
-    if (!is.ios() || status === results.GRANTED) {
-      return status
-    }
+    if (!is.ios() || status === results.GRANTED) return status
 
     // Even though we check Location Always, the user can choose When in Use.
     // If they do this on iOS, the request will return as 'blocked', but checking the When in Use
@@ -110,9 +104,7 @@ export const permissions = {
   /// storage permission (unavailable, denied, blocked, granted)
   checkStorage () {
     // No equivalent ios permission
-    if (is.ios()) {
-      return 'granted'
-    }
+    if (is.ios()) return 'granted'
 
     return check(rnpPermissions.ANDROID.WRITE_EXTERNAL_STORAGE)
   },

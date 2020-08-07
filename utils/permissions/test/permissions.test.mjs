@@ -30,6 +30,10 @@ jest.mock('react-native-permissions', () => ({
 
 
 describe('permissions', () => {
+  beforeEach(() => {
+    is.ios = jest.fn(() => true)
+  })
+
   test('requestNotifications', async () => {
     await permissions.requestNotifications()
     expect(rnpRequestNotifications).toBeCalledWith([ 'alert' ])
@@ -56,8 +60,6 @@ describe('permissions', () => {
     })
 
     test('ios requests correct permission', async () => {
-      is.ios = jest.fn(() => true)
-
       await permissions.requestMotion()
 
       expect(request).toBeCalledWith('motion-ios')
@@ -79,7 +81,6 @@ describe('permissions', () => {
     test('ios requests correct permission and returns granted', async () => {
       const status = 'granted'
       request.mockResolvedValue(status)
-      is.ios = jest.fn(() => true)
 
       const result = await permissions.requestLocation()
 
@@ -92,7 +93,6 @@ describe('permissions', () => {
       const whenInUse = 'granted'
       request.mockResolvedValue(always)
       check.mockResolvedValue(whenInUse)
-      is.ios = jest.fn(() => true)
 
       const result = await permissions.requestLocation()
 
@@ -118,7 +118,6 @@ describe('permissions', () => {
     test('ios requests correct permission and returns granted', async () => {
       const status = 'granted'
       check.mockResolvedValue(status)
-      is.ios = jest.fn(() => true)
 
       const result = await permissions.checkLocation()
 
@@ -133,7 +132,6 @@ describe('permissions', () => {
         if (permission === 'locationAlways-ios') return always
         if (permission === 'locationWhenInUse-ios') return whenInUse
       })
-      is.ios = jest.fn(() => true)
 
       const result = await permissions.checkLocation()
 

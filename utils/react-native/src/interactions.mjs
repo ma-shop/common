@@ -1,3 +1,6 @@
+/* istanbul ignore file */
+// there's no reason to test this file
+
 import { InteractionManager } from 'react-native'
 import { delay } from '@ma-shop/utils'
 

@@ -27,5 +27,6 @@ export function getDeviceLocale () {
 
   const language = localePieces[0].toLowerCase()
   const country = localePieces[1].toUpperCase()
+
   return `${language}-${country}`
 }

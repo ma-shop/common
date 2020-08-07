@@ -19,9 +19,11 @@ import { clamp } from '@ma-shop/utils'
 ///   )
 /// }
 export function accessibilityStates (obj) {
-  return Object.keys(obj)
+  const result = Object.keys(obj)
     .map((key) => obj[key] && key.replace(/^is/, '').toLowerCase())
     .filter(Boolean)
+
+  return Array.from(new Set(result))
 }
 
 
@@ -39,5 +41,6 @@ export function fontScale ({
   minimumFontScale = 1,
 } = {}) {
   if (!allowFontScaling || noFontScaling) return 1
+
   return clamp(PixelRatio.getFontScale(), minimumFontScale, maxFontSizeMultiplier)
 }
