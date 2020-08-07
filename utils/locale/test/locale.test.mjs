@@ -9,6 +9,22 @@ describe('locale', () => {
     l.setLocales(locales)
   })
 
+  test('setLocale', () => {
+    expect(() => l.setLocale('xx-ZZ')).toThrow()
+  })
+
+  test('onSetLocale', () => {
+    const fn = jest.fn()
+    l.onSetLocale(fn)
+
+    expect(l.events[0]).toEqual(expect.any(Function))
+    expect(fn).not.toBeCalled()
+
+    l.setLocale('en-US')
+
+    expect(fn).toBeCalled()
+  })
+
   test('parse', () => {
     const obj = l.parse('en-US')
 

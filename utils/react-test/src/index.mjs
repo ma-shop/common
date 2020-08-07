@@ -4,3 +4,4 @@
 
 export * from './enzyme'
 export * from './react-test'
+export * from './render-items'

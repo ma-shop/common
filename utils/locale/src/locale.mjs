@@ -24,8 +24,10 @@ export class LocaleManager {
       .filter(Boolean)
   }
 
+  exists = (locale) => this.locales.some((obj) => obj.locale === locale)
+
   setLocale (locale) {
-    if (!this.locales.find((obj) => obj.locale === locale) && locale !== 'cimode') {
+    if (!this.exists(locale) && locale !== 'cimode') {
       throw new Error(`Unsupported locale: ${locale}`)
     }
 

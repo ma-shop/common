@@ -1,3 +1,6 @@
+/* istanbul ignore file */
+// there's no reason to test this file
+
 import { Text, ViewPropTypes } from 'react-native'
 import { shapes } from '@ma-shop/react'
 import PropTypes from 'prop-types'

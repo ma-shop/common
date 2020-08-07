@@ -1,0 +1,27 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`navigation reset with default 1`] = `
+Array [
+  Object {
+    "index": 0,
+    "routes": Array [
+      Object {
+        "name": "DefaultRoute",
+      },
+    ],
+  },
+]
+`;
+
+exports[`navigation reset with override 1`] = `
+Array [
+  Object {
+    "index": 0,
+    "routes": Array [
+      Object {
+        "name": "NoneDefaultRoute",
+      },
+    ],
+  },
+]
+`;
