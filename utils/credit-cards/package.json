@@ -1,0 +1,19 @@
+{
+  "name": "@ma-shop/credit-cards",
+  "version": "0.0.1",
+  "main": "dist/index.js",
+  "author": "Alex Andreescu",
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
+  "dependencies": {
+    "luhn": "2.4.0"
+  },
+  "peerDependencies": {
+    "@ma-shop/is": "0.0.6"
+  },
+  "devDependencies": {
+    "@ma-shop/is": "^0.0.11"
+  }
+}
