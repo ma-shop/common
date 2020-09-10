@@ -3,8 +3,10 @@
 // !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
 export * from './accessibility'
+export * from './font'
 export * from './get-device-locale'
 export * from './interactions'
 export * from './is'
 export * from './navigation'
 export * from './shapes'
+export * from './spacing'
