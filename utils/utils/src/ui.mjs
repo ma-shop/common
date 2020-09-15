@@ -1,3 +1,6 @@
+import { round } from './round'
+
+
 export const ui = (() => {
   class Ui {
     constructor (obj) {
@@ -17,7 +20,7 @@ export const ui = (() => {
     // This is set at the root level and will be inherited to all text elements
     // since the `em` function needs something to start with we fake the value here initially
     get lineHeight () {
-      return this.fontSize * 1.35
+      return round(this.fontSize * 1.35)
     },
 
     // the default font family to use for the app
